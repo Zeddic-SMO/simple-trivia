@@ -1,0 +1,123 @@
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+}
+
+main {
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+
+main > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > section > h1 {
+  margin-left: -50px;
+}
+
+main > section > img {
+  width: 300px;
+}
+
+.question > h3 {
+  text-align: center;
+}
+
+.options > .option {
+  font-size: 14px;
+  padding: 8px;
+  display: block;
+  border: 1px solid #ccc;
+  background: rgb(238, 238, 238) 0%;
+  margin: 10px 0px;
+  font-family: Montserrat, Arial, "sans-serif";
+  cursor: pointer;
+}
+
+.options > .option:hover {
+  background: #ffb401;
+  color: #000;
+}
+
+.options .correctAns {
+  background: #8ac5ff;
+}
+.options .wrongAns {
+  background: tomato;
+  color: #110;
+}
+
+.firstName {
+  margin: 30px auto;
+}
+
+.firstName > label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.firstName > input {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.firstName > small {
+  display: block;
+  text-align: center;
+}
+button {
+  padding: 10px 15px;
+  margin: 10px 0px;
+  box-shadow: 2px 2px 5px;
+  cursor: pointer;
+}
+.scores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  width: 300px;
+  height: 300px;
+  box-shadow: 2px 2px 5px #ffb401;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score > #done {
+  width: 120px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #ccc;
+}
+.score > #clap {
+  width: 120px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+  main > section {
+    flex-direction: column;
+  }
+  main > section > h1 {
+    margin-top: -50px;
+    margin-left: 0px;
+  }
+}

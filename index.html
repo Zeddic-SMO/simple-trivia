@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TrustWorthy Trivia</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./main.js" async></script>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <img src="./img/quiz.gif" alt="quiz logo" />
+                <h1>QUIZ: Who would you trust with any of the these task?</h1>
+            </section>
+            <hr>
+            <div class="questions">
+                <div class="question">
+                    <h3>Who would you trust to manage a housing estate?</h3>
+                    <div class="options">
+                        <span class="option">
+                            <input type="radio" id="estate" name="estate" value="false">
+                            <label for="estate">
+                                A high school dropout with no experience in property
+                                management
+                            </label>
+                        </span>
+                        <span class="option">
+                            <input type="radio" id="estate2" name="estate" value="true">
+                            <label for="estate2">
+                                A licensed and experienced property manager with positive
+                                references
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Who would you trust to repair your car's engine?</h3>
+                    <div class="options">
+                        <span class="option">
+                            <input type="radio" id="car" name="car" value="true">
+                            <label for="car">
+                                A professional auto mechanic with good reviews
+                            </label>
+                        </span>
+                        <span class="option">
+                            <input type="radio" id="car2" name="car" value="false">
+                            <label for="car2">
+                                A librarian who has never worked on a car before
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Who would you trust to plan your wedding?</h3>
+                    <div class="options">
+                        <span class="option">
+                            <input type="radio" id="wedding" name="wedding" value="true">
+                            <label for="wedding">
+                                A professional wedding planner with experience and good
+                                reviews
+                            </label>
+                        </span>
+                        <span class="option">
+                            <input type="radio" id="wedding2" name="wedding" value="false">
+                            <label for="wedding2">
+                                A family member who is not well-organized
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Who would you trust to handle your investments?</h3>
+                    <div class="options">
+                        <span class="option">
+                            <input type="radio" id="investment" name="investment" value="false">
+                            <label for="investment">
+                                A taxi driver with no knowledge of the stock
+                                market
+                            </label>
+                        </span>
+                        <span class="option">
+                            <input type="radio" id="investment2" name="investment" value="true">
+                            <label for="investment2">
+                                A licensed and reputable financial advisor with good
+                                references
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Who would you trust to teach you how to swim?</h3>
+                    <div class="options">
+                        <span class="option">
+                            <input type="radio" id="swim" name="swim" value="false">
+                            <label for="swim">
+                                A person who is afraid of the water
+                            </label>
+                        </span>
+                        <span class="option">
+                            <input type="radio" id="swim2" name="swim" value="true">
+                            <label for="swim2">
+                                A professional swimming coach with certifications and
+                                experience
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="firstName">
+                    <small><b>Input your first name to see your scores</b></small>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="scores">
+
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+        </main>
+
+    </body>
+
+</html>
