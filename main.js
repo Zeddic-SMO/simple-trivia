@@ -55,4 +55,6 @@ submit.addEventListener("click", () => {
              `
 
   document.querySelector(".scores").innerHTML = score
+
+  scores = 0
 })
